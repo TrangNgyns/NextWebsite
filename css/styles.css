@@ -1,0 +1,26 @@
+body {
+    font-family: playfair display,serif;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+}
+header {
+    display: flex;
+    flex-flow: row wrap;
+}
+nav {
+    background-color: #3C393D;
+    font-size: 1.875em;
+}
+nav > ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+h1 {
+    font-size: 3.75em;
+}
+footer {
+    background-color: #3C393D;
+    font-size: 1.25em;
+}
