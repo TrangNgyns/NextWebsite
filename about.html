@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The Next Website</title>
         <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <script src="app.js"></script>
     </head>
     <body>
         <!--- Site Header -->
         <header id="header">
             <!---site logo-->
-            <span class="logo"><a href="index.html"><img src="images/next-white-line.png" title ="the next logo" alt="the word Next stylized like white paper clips"></a></span>
+            <a href="index.html"><img class="logo-img" src="images/next-white-line.png" title ="the next logo" alt="the word Next stylized like bright paper clips"></a>
             <!---main nav buttons-->
             <nav id="main-navigation" aria-label="Main navigation">
                 <ul class="menu">
@@ -20,30 +21,36 @@
                 </ul>
             </nav>
         </header>
+        <!--- Site Banner -->
+        <div id="wallpaper"></div>
         <!--- Site Main Contents -->
         <main id="main">
-            <h1>We Are Storytellers</h1>
-            <div>
-                <p>We specialize in storytelling of all forms. No matter your medium, we show you how to bring your art to life: on page, stage, screen, or speaker. Get hands-on experience through Live Labs, regular performances, and ongoing work-integrated learning, and learn the industry-specific business skills needed wherever your career and your story take you. Your professional future starts here.</p>
+            <span id="about-keyword">About us</span>
+            <div class="aboutcontent">
+                <p>Welcome to NEXT, the dynamic student-run agency born from Humber College’s esteemed Faculty of Media and Creative Arts. Formerly known as Building F, we’ve evolved to embody a fresh and innovative approach to bridging academic learning with real-world application.</p>
+            </div>
+            <div class="content-container">
+                <div class="content-aboutitem">
+                    <span class="home-img home-img1"><img src="images/triangular.jpg" alt="First Image"></span>
+                </div>
+            </div>
+            <div class="aboutcontent">
+                <span id="about-headline">Our </span><span id="about-headline-key">Evolution</span>
+                <p>NEXT represents a new chapter in our journey. Since 2016, we’ve been dedicated to offering students real-world experience through meaningful projects with external organizations. Now, as a fully operational student-run agency, we’re pushing the boundaries of what’s possible, blending academic rigor with industry practice to deliver exceptional results. </p>
+            </div>
+            <div class="aboutcontent">
+                <span id="about-headline">Our </span><span id="about-headline-key">Values</span>
+                <p>We are driven by our core values of Education, Creativity, Collaboration, Fun, and Freshness. These principles guide our approach to every project, ensuring that we not only meet but exceed expectations. At NEXT, we believe in the power of learning through doing, and we’re committed to fostering a collaborative environment that inspires both our students and our clients.</p>
             </div>
         </main>
-        <aside id="side">
-            <p>lalala</p>
-            <span class="page logo"><img src="images/next-yellow-line.png"></span>
-            <ul class="pages"><!---style like two buttons with a divider-->
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </aside>
         <!--- Site Footer -->
         <footer id="footer">
-            <p>Follow our work on social media!</p>
-            <span class="socmed-logo"><!---style as round buttons-->
-                <a href="#"><img src="images/logo-fb.png" title="facebook"></a>
-                <a href="#"><img src="images/logo-X.png" title="twitter"></a>
-                <a href="#"><img src="images/logo-ig.png" title="instagram"></a>
-                <a href="#"><img src="images/logo-yt.png" title="youtube"></a>
-            </span>
+            <ul class="socmed-logo"><!---style as round buttons-->
+                <li><a href="#"><img src="images/logo-fb.png" title="facebook" class="bottom-img"></a></li>
+                <li><a href="#"><img src="images/logo-X.png" title="twitter" class="bottom-img"></a></li>
+                <li><a href="#"><img src="images/logo-ig.png" title="instagram" class="bottom-img"></a></li>
+                <li><a href="#"><img src="images/logo-yt.png" title="youtube" class="bottom-img"></a></li>
+            </ul>
             <p>&copy; Copyright | NEXT Student Agency | 2024</p>
         </footer>
     </body>

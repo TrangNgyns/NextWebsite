@@ -4,14 +4,15 @@ body {
     font-size:16px;
     color: white;
     background-color: black;
-    margin:0;
+    margin: 0;
+    transition: 1s ease-out;
 }
+/***HEADER all***/
 header {
     display:flex;
     flex-flow:row;
     align-items:center;
     justify-content:space-between;
-    text-align-last: right;
     background-color: #3C393D;
 }
 .logo-img {
@@ -23,6 +24,7 @@ header {
 }
 nav {
     font-size:1.875em;
+    text-transform: uppercase;
 }
 ul {
     list-style-type:none;
@@ -47,17 +49,141 @@ ul {
 .menu > li {
     margin:10px;
 }
+/***ASIDE index***/
+aside {
+    background-image: url('/images/banner-yellow.jpg');
+    min-height: 450px;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0;
+    mask-image: none;
+ }
+/***MAIN index****/
+main {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 30px;
+    padding-bottom: 7em;
+}
+.content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+.content-item {
+    padding-left: 12%;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+.home-img {
+    width: 460px;
+    height: 464px;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 2px solid #fff;
+}
+.home-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text-block {
+    width: 537px;
+    height: 408px;
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.text-block h2 {
+    color: #D50F7A;
+    font-size: 4em;
+    margin: 0 0 10px 0;
+}
+.text-block p {
+    font-size: 2em;
+    font-weight:200;
+    margin: 0;
+}
+.text-block a:link {
+    text-decoration: none;
+    transition: 0.5s ease-out;
+}
+/* .text.text-block h2 a:hover {
+    text-shadow: 0 0 50px #D50F7A;
+}
+.text-block p a:hover {
+    text-shadow: 0 0 10px #fff;
+    font-weight:200;
+} */
 h1 {
-    font-size:3.75em;
+    font-size:4em;
+    color:#FFCE2B;
+    display:grid;
+    text-align: center;
+    padding-top: 0.5em;
+}
+#keyword {
+    font-family: 'east sea dokdo';
+    font-size: 1.75em;
+}
+/***WALLPAPER about***/
+#wallpaper {
+    background-image: url('/images/banner-jump.jpg');
+    background-color: white;
+    min-height: 450px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/***MAIN about***/
+#about-keyword{
+    font-size: 8em;
+    font-family: 'east sea dokdo';
+    display:grid;
+    text-align: center;
+    padding-top: 0.5em;
+}
+#about-headline{
+    font-size:1.75em;
+    font-weight:800;
+    color:#FFCE2B;
+    text-align: left;
+    padding: 0.5em 0 0 25px;
+}
+#about-headline-key{
+    font-family: 'east sea dokdo';
+    font-size: 3em;
     color:#FFCE2B;
 }
-.keyword {
-    font-family: 'east sea dokdo';
+.content-aboutitem{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
-.banner {
+.aboutbanner {
     max-width: 100%;
     max-height: 60%;
 }
+.aboutcontent{
+    padding-top: 5%;
+    font-size: 2em;
+    font-weight: 200;
+}
+.aboutcontent p {
+    padding: 0 0 0 30px;
+}
+/***FOOTER all***/
 .socmed-logo {
     display:flex;
     flex-direction:row;
@@ -71,6 +197,7 @@ footer {
     background-color: #3C393D;
     font-size:1em;
     padding:1.5em 2em 1.5em 2em;
+    transition: 0.5s;
 }
 footer > p {
     display:flex;
@@ -84,10 +211,7 @@ footer > p {
     background-color: white;
     clip-path: circle(50% at 50% 50%);
 }
-a:visited,a:active {
-    color:white;
-}
-a:hover {
-    color:white;
-
+a:visited {
+    color: inherit;
+    text-decoration: none;
 }

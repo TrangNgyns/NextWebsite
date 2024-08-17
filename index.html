@@ -4,6 +4,7 @@
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The Next Website</title>
         <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <script src="app.js"></script>
     </head>
     <body>
         <!--- Site Header -->
@@ -21,20 +22,38 @@
             </nav>
         </header>
         <!--- Site Banner-->
-        <aside>
-            <img class="banner" src="images/banner-yellow.jpg" title="yellow banner image" alt="a person is seen walking across the hall in a blur, with yellow text asking Are You Headed?">
-        </aside>
+        <aside></aside>
         <!--- Site Main Contents-->
         <main id="main">
             <h1>Innovation Through <span id="keyword">Technology</span></h1>
-            <div><!--Fixing home page main content since it changed in Figma-->
-                <ul class="main-menu">
-                    <li></li>
-                </ul>
-                <span class="home-img1"><img src="images/"></span>
-                <span class="home-img2"><img src="images/purple.jpg"></span>
-                <span class="home-img3"><img src="images/swirl-hall.jpg"></span>
-                <span class="home-img4"><img src="images/bubble.jpg"></span>
+            <div class="content-container">
+                <div class="content-item">
+                    <span class="home-img home-img1"><img src="images/banner-jump.jpg" alt="First Image"></span>
+                    <div class="text-block">
+                        <a href="#">
+                           <h2>About</h2>
+                            <p>Learn More</p> 
+                        </a>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <span class="home-img home-img2"><img src="images/blur-hall.jpg" alt="Purple Image"></span>
+                    <div class="text-block">
+                        <a href="#">
+                            <h2>Services</h2>
+                            <p>Learn More</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <span class="home-img home-img3"><img src="images/walk.jpg" alt="Swirl Hall Image"></span>
+                    <div class="text-block">
+                        <a href="#">
+                            <h2>Contact</h2>
+                            <p>Learn More</p>
+                        </a>
+                    </div>
+                </div>
             </div>
         </main>
         <!--- Site Footer -->
