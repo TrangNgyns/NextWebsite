@@ -1,26 +1,74 @@
 body {
-    font-family: playfair display,serif;
-    font-size: 16px;
+    font-family:'montserrat',serif;
+    font-weight: 400;
+    font-size:16px;
     color: white;
     background-color: black;
+    margin:0;
 }
 header {
-    display: flex;
-    flex-flow: row wrap;
+    display:flex;
+    flex-flow:row wrap;
+    background-color: #3C393D;
+}
+.logo-img {
+    max-height:50%;
+    max-width:50%;
+    display:block;
 }
 nav {
-    background-color: #3C393D;
-    font-size: 1.875em;
+    font-size:1.875em;
 }
-nav > ul {
-    list-style-type: none;
-    display: flex;
+ul {
+    list-style-type:none;
+}
+.menu {
+    list-style-type:none;
+    display:flex;
     flex-flow: row wrap;
+    padding:0 0.5em 0 0.5em;
+    font-weight:800;
+}
+.menu a:link {
+    color: white;
+    text-decoration:none;
+    font-weight: 100;
+    transition: 0.5s;
+}
+.menu a:hover {
+    margin: 0 5px 0 5px;
+    text-shadow: 0 0 10px #fff;
+    font-weight:200;
+}
+.menu > li {
+    margin:10px;
 }
 h1 {
-    font-size: 3.75em;
+    font-size:3.75em;
+    color:#FFCE2B;
+}
+.banner {
+    max-width: 100%;
+    max-height: 60%;
+}
+.socmed-logo {
+    display:flex;
+    flex-direction:row;
 }
 footer {
     background-color: #3C393D;
-    font-size: 1.25em;
+    font-size:1.25em;
+}
+.bottom-img {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    clip-path: circle(50% at 50% 50%);
+}
+a:visited,a:active {
+    color:white;
+}
+a:hover {
+    color:white;
+
 }

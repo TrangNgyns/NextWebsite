@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The Next Website</title>
         <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
@@ -9,7 +9,7 @@
         <!--- Site Header -->
         <header id="header">
             <!---site logo-->
-            <span class="logo"><a href="index.html"><img src="images/next-white-line.png" title ="the next logo" alt="the word Next stylized like white paper clips"></a></span>
+            <span id="logo"><a href="index.html"><img class="logo-img" src="images/next-white-line.png" title ="the next logo" alt="the word Next stylized like bright paper clips"></a></span>
             <!---main nav buttons-->
             <nav id="main-navigation" aria-label="Main navigation">
                 <ul class="menu">
@@ -20,11 +20,18 @@
                 </ul>
             </nav>
         </header>
+        <!--- Site Banner-->
+        <aside>
+            <img class="banner" src="images/banner-yellow.jpg" title="yellow banner image" alt="a person is seen walking across the hall in a blur, with yellow text asking Are You Headed?">
+        </aside>
         <!--- Site Main Contents-->
         <main id="main">
-            <h1>Innovation By Technology</h1>
-            <div>
-                <span class="home-img1"><img src="images/busy-hall.jpg"></span>
+            <h1>Innovation Through <span id="keyword">Technology</span></h1>
+            <div><!--Fixing home page main content since it changed in Figma-->
+                <ul class="main-menu">
+                    <li></li>
+                </ul>
+                <span class="home-img1"><img src="images/"></span>
                 <span class="home-img2"><img src="images/purple.jpg"></span>
                 <span class="home-img3"><img src="images/swirl-hall.jpg"></span>
                 <span class="home-img4"><img src="images/bubble.jpg"></span>
@@ -33,12 +40,12 @@
         <!--- Site Footer -->
         <footer id="footer">
             <p>Follow our work on social media!</p>
-            <span class="socmed-logo"><!---style as round buttons-->
-                <a href="#"><img src="images/logo-fb.png" title="facebook"></a>
-                <a href="#"><img src="images/logo-X.png" title="twitter"></a>
-                <a href="#"><img src="images/logo-ig.png" title="instagram"></a>
-                <a href="#"><img src="images/logo-yt.png" title="youtube"></a>
-            </span>
+            <ul class="socmed-logo"><!---style as round buttons-->
+                <li><a href="#"><img src="images/logo-fb.png" title="facebook" class="bottom-img"></a></li>
+                <li><a href="#"><img src="images/logo-X.png" title="twitter" class="bottom-img"></a></li>
+                <li><a href="#"><img src="images/logo-ig.png" title="instagram" class="bottom-img"></a></li>
+                <li><a href="#"><img src="images/logo-yt.png" title="youtube" class="bottom-img"></a></li>
+            </ul>
             <p>&copy; Copyright | NEXT Student Agency | 2024</p>
         </footer>
     </body>
