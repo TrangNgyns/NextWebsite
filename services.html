@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The Next Website</title>
         <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <script src="app.js"></script>
     </head>
     <body>
         <!--- Site Header -->
         <header id="header">
             <!---site logo-->
-            <span class="logo"><a href="index.html"><img src="images/next-white-line.png" title ="the next logo" alt="the word Next stylized like white paper clips"></a></span>
+            <a href="index.html"><img class="logo-img" src="images/next-white-line.png" title ="the next logo" alt="the word Next stylized like bright paper clips"></a>
             <!---main nav buttons-->
             <nav id="main-navigation" aria-label="Main navigation">
                 <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li>Services</li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -29,13 +30,12 @@
         </main>
         <!--- Site Footer -->
         <footer id="footer">
-            <p>Follow our work on social media!</p>
-            <span class="socmed-logo"><!---style as round buttons-->
-                <a href="#"><img src="images/logo-fb.png" title="facebook"></a>
-                <a href="#"><img src="images/logo-X.png" title="twitter"></a>
-                <a href="#"><img src="images/logo-ig.png" title="instagram"></a>
-                <a href="#"><img src="images/logo-yt.png" title="youtube"></a>
-            </span>
+            <ul class="socmed-logo"><!---style as round buttons-->
+                <li><a href="#"><img src="images/logo-fb.png" title="facebook" class="bottom-img"></a></li>
+                <li><a href="#"><img src="images/logo-X.png" title="twitter" class="bottom-img"></a></li>
+                <li><a href="#"><img src="images/logo-ig.png" title="instagram" class="bottom-img"></a></li>
+                <li><a href="#"><img src="images/logo-yt.png" title="youtube" class="bottom-img"></a></li>
+            </ul>
             <p>&copy; Copyright | NEXT Student Agency | 2024</p>
         </footer>
     </body>
