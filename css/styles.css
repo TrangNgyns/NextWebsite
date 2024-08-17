@@ -8,13 +8,18 @@ body {
 }
 header {
     display:flex;
-    flex-flow:row wrap;
+    flex-flow:row;
+    align-items:center;
+    justify-content:space-between;
+    text-align-last: right;
     background-color: #3C393D;
 }
 .logo-img {
-    max-height:50%;
-    max-width:50%;
-    display:block;
+    height:20%;
+    width:25vw;
+    object-fit: contain;
+    padding: 2.2em 0 2.2em 2.3em;
+    display:inline;
 }
 nav {
     font-size:1.875em;
@@ -23,7 +28,6 @@ ul {
     list-style-type:none;
 }
 .menu {
-    list-style-type:none;
     display:flex;
     flex-flow: row wrap;
     padding:0 0.5em 0 0.5em;
@@ -47,6 +51,9 @@ h1 {
     font-size:3.75em;
     color:#FFCE2B;
 }
+.keyword {
+    font-family: 'east sea dokdo';
+}
 .banner {
     max-width: 100%;
     max-height: 60%;
@@ -54,10 +61,22 @@ h1 {
 .socmed-logo {
     display:flex;
     flex-direction:row;
+    align-items:center;
+    justify-content:center;
+}
+.socmed-logo > li {
+    padding: 0 0.5em 1.2em 0.5em;
 }
 footer {
     background-color: #3C393D;
-    font-size:1.25em;
+    font-size:1em;
+    padding:1.5em 2em 1.5em 2em;
+}
+footer > p {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
 }
 .bottom-img {
     height: 50px;
